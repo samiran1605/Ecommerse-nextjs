@@ -1,10 +1,13 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+"use client";
+
+import { Modal } from "@/components/ui/modal";
 
 const SetupPage = () => {
   return (
-    <div>
-      <Button>Button</Button>
+    <div className="p4">
+      <Modal title="test" description="test desc" isOpen onClose={() => {}}>
+        Children
+      </Modal>
     </div>
   );
 };
